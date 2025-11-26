@@ -106,25 +106,25 @@ class HomeView extends GetView<HomeController> {
                                       color: Colors.white,
                                     ),
                                   ),
-                                  title: Row(
-                                    crossAxisAlignment: CrossAxisAlignment.end,
-                                    children: [
-                                      Text(
-                                        player.name,
-                                        style: Theme.of(context)
-                                            .textTheme
-                                            .titleLarge
-                                            ?.copyWith(fontSize: 20),
-                                      ),
-                                      SizedBox(width: 16),
-                                      Text(
-                                        'UID: ${player.uid}',
-                                        style:
-                                            Theme.of(
-                                              context,
-                                            ).textTheme.bodySmall,
-                                      ),
-                                    ],
+                                  title: Text(
+                                    player.name,
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .titleLarge
+                                        ?.copyWith(fontSize: 20),
+                                  ),
+                                  subtitle: Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                      0,
+                                      6,
+                                      0,
+                                      0,
+                                    ),
+                                    child: Text(
+                                      'UID: ${player.uid}',
+                                      style:
+                                          Theme.of(context).textTheme.bodySmall,
+                                    ),
                                   ),
                                   trailing: const Icon(
                                     Icons.arrow_forward_ios,
