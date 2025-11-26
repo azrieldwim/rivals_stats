@@ -7,11 +7,7 @@ import '../controllers/main_controller.dart';
 class MainView extends GetView<MainController> {
   const MainView({super.key});
 
-  final List<Widget> pages = const [
-    LeaderboardView(),
-    HomeView(),
-    Center(child: Text("© 2025 Azriel Dwi Mahendra")),
-  ];
+  final List<Widget> pages = const [LeaderboardView(), HomeView()];
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +29,6 @@ class MainView extends GetView<MainController> {
               label: 'Leaderboard',
             ),
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.list), label: 'herolist'),
           ],
         ),
       ),
