@@ -7,6 +7,7 @@ class AppColors {
   static const Color primary = Color(0xFFfdd92d);
   static const Color amber = Color(0xFFFFCA28);
   static const Color green = Color(0xFF69F0AE);
+  static const Color red2 = Color(0xFFE53935);
 
   static const Color textPrimary = Colors.white;
   static const Color textSecondary = Color(0xFFa4a2b8);
