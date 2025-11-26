@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get/get.dart';
 import 'package:rivals_stats/config/routes/app_pages.dart';
 import 'package:rivals_stats/config/routes/app_routes.dart';
@@ -14,6 +15,8 @@ void main() async {
       statusBarBrightness: Brightness.dark,
     ),
   );
+
+  await dotenv.load(fileName: ".env");
 
   runApp(const MyApp());
 }
