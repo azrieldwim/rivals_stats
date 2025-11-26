@@ -5,6 +5,8 @@ class AppColors {
   static const Color white = Color(0xFFFFFFFF);
   static const Color gold = Color(0xFFdbc368);
   static const Color primary = Color(0xFFfdd92d);
+  static const Color amber = Color(0xFFFFCA28);
+  static const Color green = Color(0xFF69F0AE);
 
   static const Color textPrimary = Colors.white;
   static const Color textSecondary = Color(0xFFa4a2b8);
